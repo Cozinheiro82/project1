@@ -1,0 +1,182 @@
+body {
+  background-color: #131312;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#logoNav {
+  width: 10%;
+  float: left;
+}
+h1 {
+  font-size: 96px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #f3f3ed;
+  padding: 10px 100px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #c6a42c;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #c6a42c;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f3f3ed;
+  padding: 10px 100px;
+}
+
+* {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #c6a42c;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 10px 30px;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+li a:hover:not(.active) {
+  background-color: #222a27;
+  color: #aa9767;
+}
+
+#homePic {
+  width: 400px;
+  opacity: 0.8;
+  margin-right: 100px;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+#presentation {
+  flex-grow: 1;
+  padding: 10px 200px;
+  min-height: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+#homePic img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 28px;
+    padding: 10px 20px;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  ul {
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    align-items: center;
+    width: 100%;
+  }
+
+  li {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  li a {
+    padding: 2px;
+    width: 100%;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #presentation {
+    padding: 20px;
+  }
+
+  #homePic {
+    margin-right: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  #logoNav {
+    float: none;
+    width: 15%;
+  }
+}
+/*telefoons*/
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  ul {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  #logoNav {
+    float: none;
+    width: 15%;
+  }
+}
