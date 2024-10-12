@@ -11,14 +11,45 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/hobby.html">Hobby&Interesses</a></li>
-        <li><a href="/curriculum.html">Curriculum</a></li>
-        <li><a href="/ervaring.html">Ervaring</a></li>
-        <!-- <li><a href="/projecten.html">Projecten</a></li> -->
-        <li><a class="active" href="/contact.html">Contact</a></li>
-    </ul>
-    <H1>Under Construction</H1>
+    <nav>
+        <ul>
+          <li>
+            <img id="logoNav" src="/afbeeldingen/logo.PNG" alt="mijnLogo" />
+          </li>
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="/hobby.html">Hobby & Interesses</a></li>
+          <li><a href="/curriculum.html">Curriculum</a></li>
+          <li><a href="/ervaring.html">Ervaring</a></li>
+          <!-- <li><a href="/projecten.html">Projecten</a></li> -->
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <H1>Contacteer mij ...</H1>
+    <h3>Stel via onderstaand formulier je vraag en ik zal deze zo vlug mogelijk beantwoorden.</h3>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+      <div>
+        <label for="naam">Naam :</label>
+        <input type="text" id="naam" name="naam" required>
+      </div>
+      <div>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="onderwerp">Onderwerp :</label>
+        <input type="text" id="onderwerp" name="onderwerp">
+      </div>
+      <div>
+        <label for="inhoud">Uw vraag :</label>
+        <textarea name="inhoud" cols="40" rows="5" required></textarea>
+      </div>
+      <div>
+        <label for="verzenden">
+          <input type="submit" value="Verzenden" id="verzenden" name="verzenden"
+        </label>
+      </div>
+
+    </form>
+
 </body>
 </html>

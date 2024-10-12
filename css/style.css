@@ -180,3 +180,24 @@ section {
     width: 15%;
   }
 }
+form div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+form label {
+  width: 150px;
+  margin-right: 10px;
+  text-align: right;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  flex: 0.5;
+  padding: 5px;
+}
+form input[type="submit"] {
+  margin-left: 160px;
+}
