@@ -201,3 +201,25 @@ form textarea {
 form input[type="submit"] {
   margin-left: 160px;
 }
+table {
+  color: white;
+  border: solid 1px #c6a42c;
+  border-collapse: collapse;
+  margin: 5em;
+}
+th {
+  text-align: center;
+  border: solid 1px #c6a42c;
+  padding: 10px;
+}
+td {
+  text-align: left;
+  border: solid 1px #c6a42c;
+  padding: 10px;
+}
+.onderwerp {
+  width: 40%;
+}
+.date {
+  width: 10%;
+}
