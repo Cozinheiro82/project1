@@ -92,9 +92,10 @@ li a:hover:not(.active) {
 
 /* Home  */
 #homePic {
-  width: 400px;
+  width: 100%;
+  max-width: 350px;
   opacity: 0.8;
-  margin-right: 100px;
+  margin: 0 auto;
   padding: 10px;
   flex-shrink: 0;
 }
@@ -102,7 +103,7 @@ li a:hover:not(.active) {
 #presentation {
   flex-grow: 1;
   padding: 10px 100px;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 section {
@@ -118,29 +119,50 @@ section {
 }
 
 /* Contact formulier */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #222a27;
+  border-radius: 8px;
+}
+
 form div {
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 form label {
   width: 150px;
   margin-right: 10px;
-  text-align: right;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  flex: 0.5;
-  padding: 5px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #c6a42c;
+  border-radius: 4px;
 }
 
 form input[type="submit"] {
-  text-align: center;
+  background-color: #c6a42c;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #222a27;
 }
 
 /* Curriculum tabel */
@@ -199,20 +221,23 @@ td {
   max-width: 100%;
   height: auto;
 }
+/*hobby pagina*/
+.flex-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
 
-/* kleinere schermen*/
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+.flex-item {
+  flex: 1;
+  padding: 10px;
+}
 
-  .text {
-    max-width: 100%;
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .image {
-    max-width: 100%;
-  }
+.flex-item img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+#duikfoto {
+  padding-left: 15%;
 }
