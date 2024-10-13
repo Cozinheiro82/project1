@@ -23,7 +23,6 @@ h2 {
   font-size: 36px;
   font-weight: 600;
   color: #f3f3ed;
-  padding: 10px 100px;
   text-align: center;
 }
 
@@ -51,7 +50,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   color: #f3f3ed;
-  padding: 10px 100px;
+  padding: 10px 0px;
   text-align: left;
 }
 
@@ -90,7 +89,34 @@ li a:hover:not(.active) {
   color: #aa9767;
 }
 
-/* Home  */
+/* homepagina tekst en afbeelding */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 20px;
+  padding-left: 20%;
+}
+
+.image {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
 #homePic {
   width: 100%;
   max-width: 350px;
@@ -106,16 +132,56 @@ li a:hover:not(.active) {
   min-height: 100vh;
 }
 
-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: nowrap;
-}
-
 #homePic img {
   max-width: 100%;
   height: auto;
+}
+/*hobby pagina*/
+.flex-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 10px;
+}
+
+.flex-item img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+#duikfoto {
+  padding-left: 15%;
+}
+/* Curriculum tabel */
+table {
+  color: white;
+  border: solid 1px #c6a42c;
+  border-collapse: collapse;
+  margin: 5em;
+}
+
+th {
+  text-align: center;
+  border: solid 1px #c6a42c;
+  padding: 10px;
+}
+
+td {
+  text-align: left;
+  border: solid 1px #c6a42c;
+  padding: 10px;
+}
+
+.onderwerp {
+  width: 40%;
+}
+
+.date {
+  width: 10%;
 }
 
 /* Contact formulier */
@@ -164,80 +230,6 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #222a27;
 }
-
-/* Curriculum tabel */
-table {
-  color: white;
-  border: solid 1px #c6a42c;
-  border-collapse: collapse;
-  margin: 5em;
-}
-
-th {
-  text-align: center;
-  border: solid 1px #c6a42c;
-  padding: 10px;
-}
-
-td {
-  text-align: left;
-  border: solid 1px #c6a42c;
-  padding: 10px;
-}
-
-.onderwerp {
-  width: 40%;
-}
-
-.date {
-  width: 10%;
-}
-
-/* homepagina tekst en afbeelding */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.text {
-  flex: 1;
-  max-width: 50%;
-  padding-right: 20px;
-}
-
-.image {
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.image img {
-  max-width: 100%;
-  height: auto;
-}
-/*hobby pagina*/
-.flex-container {
-  display: flex;
-  margin-bottom: 20px;
-  align-items: flex-start;
-}
-
-.flex-item {
-  flex: 1;
-  padding: 10px;
-}
-
-.flex-item img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-}
-#duikfoto {
-  padding-left: 15%;
+#logos {
+  max-width: 20px;
 }
