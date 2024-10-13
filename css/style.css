@@ -4,14 +4,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Logo */
 #logoNav {
-  width: 10%;
+  width: 50px;
+  margin-right: auto;
   float: left;
 }
+
 h1 {
   font-size: 96px;
   font-weight: 800;
   color: #ffffff;
+  text-align: center;
 }
 
 h2 {
@@ -19,18 +24,22 @@ h2 {
   font-weight: 600;
   color: #f3f3ed;
   padding: 10px 100px;
+  text-align: center;
+}
+
+h3,
+h4 {
+  font-weight: 500;
+  color: #c6a42c;
 }
 
 h3 {
   font-size: 28px;
-  font-weight: 500;
-  color: #c6a42c;
+  text-align: center;
 }
 
 h4 {
   font-size: 20px;
-  font-weight: 500;
-  color: #c6a42c;
 }
 
 h5 {
@@ -43,10 +52,12 @@ p {
   font-weight: 400;
   color: #f3f3ed;
   padding: 10px 100px;
+  text-align: left;
 }
 
-* {
-  text-align: center;
+/* Navigatie */
+nav {
+  overflow: hidden;
 }
 
 ul {
@@ -58,20 +69,20 @@ ul {
   margin: 0;
   padding: 0;
   background-color: #c6a42c;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 li {
-  margin: 10px 30px;
+  margin: 5px 15px;
 }
 
 li a {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 5px 16px;
+  padding: 5px 10px;
   text-decoration: none;
-  transition: background-color 0.3s; /* Smooth transition */
+  transition: background-color 0.3s;
 }
 
 li a:hover:not(.active) {
@@ -79,6 +90,7 @@ li a:hover:not(.active) {
   color: #aa9767;
 }
 
+/* Home  */
 #homePic {
   width: 400px;
   opacity: 0.8;
@@ -89,7 +101,7 @@ li a:hover:not(.active) {
 
 #presentation {
   flex-grow: 1;
-  padding: 10px 200px;
+  padding: 10px 100px;
   min-height: 100%;
 }
 
@@ -105,81 +117,7 @@ section {
   height: auto;
 }
 
-/* tablets */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 64px;
-  }
-
-  h2 {
-    font-size: 28px;
-    padding: 10px 20px;
-  }
-
-  p {
-    font-size: 12px;
-    padding: 10px 20px;
-  }
-
-  ul {
-    flex-direction: column;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    align-items: center;
-    width: 100%;
-  }
-
-  li {
-    margin: 5px 0;
-    width: 100%;
-  }
-
-  li a {
-    padding: 2px;
-    width: 100%;
-  }
-
-  section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #presentation {
-    padding: 20px;
-  }
-
-  #homePic {
-    margin-right: 0;
-    padding: 20px;
-    width: 100%;
-  }
-  #logoNav {
-    float: none;
-    width: 15%;
-  }
-}
-/*telefoons*/
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-  ul {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-  #logoNav {
-    float: none;
-    width: 15%;
-  }
-}
+/* Contact formulier */
 form div {
   color: white;
   display: flex;
@@ -187,39 +125,94 @@ form div {
   align-items: center;
   margin-bottom: 10px;
 }
+
 form label {
   width: 150px;
   margin-right: 10px;
   text-align: right;
 }
+
 form input[type="text"],
 form input[type="email"],
 form textarea {
   flex: 0.5;
   padding: 5px;
 }
+
 form input[type="submit"] {
-  margin-left: 160px;
+  text-align: center;
 }
+
+/* Curriculum tabel */
 table {
   color: white;
   border: solid 1px #c6a42c;
   border-collapse: collapse;
   margin: 5em;
 }
+
 th {
   text-align: center;
   border: solid 1px #c6a42c;
   padding: 10px;
 }
+
 td {
   text-align: left;
   border: solid 1px #c6a42c;
   padding: 10px;
 }
+
 .onderwerp {
   width: 40%;
 }
+
 .date {
   width: 10%;
+}
+
+/* homepagina tekst en afbeelding */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* kleinere schermen*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    max-width: 100%;
+  }
 }
